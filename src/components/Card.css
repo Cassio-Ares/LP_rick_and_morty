@@ -1,0 +1,138 @@
+.card {
+  width: 20rem;
+  height: 30rem;
+  background: rgb(192, 192, 192);
+  border-radius: 0.5rem;
+  position: relative;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+}
+
+.card::before {
+  content: " ";
+  position: absolute;
+  width: 125px;
+  height: 130%;
+  background: rgb(54, 162, 24);
+  background: radial-gradient(
+    circle,
+    rgba(54, 162, 24, 1) 13%,
+    rgba(133, 195, 51, 1) 18%,
+    rgba(85, 175, 35, 1) 20%,
+    rgba(114, 187, 45, 1) 23%,
+    rgba(33, 154, 17, 1) 29%,
+    rgba(99, 181, 40, 1) 36%,
+    rgba(8, 144, 8, 1) 38%,
+    rgba(8, 144, 8, 1) 44%,
+    rgba(73, 170, 31, 1) 51%,
+    rgba(8, 144, 8, 1) 56%,
+    rgba(156, 204, 59, 1) 73%,
+    rgba(8, 144, 8, 1) 74%,
+    rgba(18, 148, 12, 1) 80%
+  );
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+  animation: portal 5s linear infinite;
+  transition: all 0.2s linear;
+  z-index: 1;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  width: 19rem;
+  height: 29rem;
+  background: rgb(192, 192, 192);
+  border-radius: 0.5rem;
+  z-index: 2;
+}
+
+
+ @keyframes portal {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}    
+
+figure {
+  display: flex;
+  justify-content: center;
+  width: 15rem;
+  height: 15rem;
+  overflow: hidden;
+}
+
+
+
+.img_card {
+  position: absolute;
+  object-fit: cover;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 10rem;
+  z-index: 4;
+  top: 1rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+img{
+  position: absolute;
+  object-fit: cover;
+  width: 14rem;
+  height: 14rem;
+  border-radius: 10rem;
+  z-index: 4;
+
+}
+
+
+.img_card::before {
+  content: ' ';
+  position: absolute;
+  width: 130%;
+  height: 100px;
+  top: 4rem;
+  background: rgb(54,162,24);
+  background: radial-gradient(circle, rgba(54,162,24,1) 13%, rgba(133,195,51,1) 18%, rgba(85,175,35,1) 20%, rgba(114,187,45,1) 23%, rgba(33,154,17,1) 29%, rgba(99,181,40,1) 36%, rgba(8,144,8,1) 38%, rgba(8,144,8,1) 44%, rgba(73,170,31,1) 51%, rgba(8,144,8,1) 56%, rgba(156,204,59,1) 73%, rgba(8,144,8,1) 74%, rgba(18,148,12,1) 80%);
+  position: absolute;
+  animation: imgRotate 5s linear infinite;
+  transition: all 0.2s linear;
+  z-index: 3;
+  
+} 
+
+ @keyframes imgRotate {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}   
+
+.text{
+  position: relative;
+  z-index: 6;
+  top: -1rem;
+
+  text-wrap: wrap;
+}
+
+h4{
+  text-wrap: wrap;
+}
+
