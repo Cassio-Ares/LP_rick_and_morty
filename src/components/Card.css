@@ -1,7 +1,7 @@
 .card {
   width: 20rem;
   height: 30rem;
-  background: rgb(192, 192, 192);
+  background: rgb(14, 13, 13);
   border-radius: 0.5rem;
   position: relative;
   z-index: -1;
@@ -9,7 +9,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .card::before {
@@ -47,13 +47,12 @@
   position: absolute;
   width: 19rem;
   height: 29rem;
-  background: rgb(192, 192, 192);
+  background: #000000;
   border-radius: 0.5rem;
   z-index: 2;
 }
 
-
- @keyframes portal {
+@keyframes portal {
   from {
     transform: rotate(0deg);
   }
@@ -61,7 +60,7 @@
   to {
     transform: rotate(360deg);
   }
-}    
+}
 
 figure {
   display: flex;
@@ -70,8 +69,6 @@ figure {
   height: 15rem;
   overflow: hidden;
 }
-
-
 
 .img_card {
   position: absolute;
@@ -85,36 +82,47 @@ figure {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
 }
 
-img{
+img {
   position: absolute;
   object-fit: cover;
   width: 14rem;
   height: 14rem;
   border-radius: 10rem;
   z-index: 4;
-
 }
 
-
 .img_card::before {
-  content: ' ';
+  content: " ";
   position: absolute;
   width: 130%;
   height: 100px;
   top: 4rem;
-  background: rgb(54,162,24);
-  background: radial-gradient(circle, rgba(54,162,24,1) 13%, rgba(133,195,51,1) 18%, rgba(85,175,35,1) 20%, rgba(114,187,45,1) 23%, rgba(33,154,17,1) 29%, rgba(99,181,40,1) 36%, rgba(8,144,8,1) 38%, rgba(8,144,8,1) 44%, rgba(73,170,31,1) 51%, rgba(8,144,8,1) 56%, rgba(156,204,59,1) 73%, rgba(8,144,8,1) 74%, rgba(18,148,12,1) 80%);
+  background: rgb(54, 162, 24);
+  background: radial-gradient(
+    circle,
+    rgba(54, 162, 24, 1) 13%,
+    rgba(133, 195, 51, 1) 18%,
+    rgba(85, 175, 35, 1) 20%,
+    rgba(114, 187, 45, 1) 23%,
+    rgba(33, 154, 17, 1) 29%,
+    rgba(99, 181, 40, 1) 36%,
+    rgba(8, 144, 8, 1) 38%,
+    rgba(8, 144, 8, 1) 44%,
+    rgba(73, 170, 31, 1) 51%,
+    rgba(8, 144, 8, 1) 56%,
+    rgba(156, 204, 59, 1) 73%,
+    rgba(8, 144, 8, 1) 74%,
+    rgba(18, 148, 12, 1) 80%
+  );
   position: absolute;
   animation: imgRotate 5s linear infinite;
   transition: all 0.2s linear;
   z-index: 3;
-  
-} 
+}
 
- @keyframes imgRotate {
+@keyframes imgRotate {
   from {
     transform: rotate(360deg);
   }
@@ -122,9 +130,9 @@ img{
   to {
     transform: rotate(0deg);
   }
-}   
+}
 
-.text{
+.text {
   position: relative;
   z-index: 6;
   top: -1rem;
@@ -132,7 +140,13 @@ img{
   text-wrap: wrap;
 }
 
-h4{
+h4 {
   text-wrap: wrap;
+  color: aliceblue;
 }
-
+span {
+  color: rgb(1, 175, 199);
+  
+  text-shadow: -1px -1px 0px rgb(180,238,116), -1px 1px 0px rgb(180,238,116), 1px -1px 0px rgb(180,238,116),
+    1px 0px 0px rgb(180,238,116);
+}
