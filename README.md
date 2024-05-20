@@ -2,6 +2,8 @@
 
 Este é um projeto de uma página web para visualizar informações sobre a série Rick and Morty, desenvolvido com Vite e utilizando a API do Rick and Morty.
 
+ **Site do Projeto**: [Site de Cards Rick and Morty](https://lp-rick-and-morty.vercel.app/)
+
 ## Visão Geral
 
 Este projeto foi desenvolvido para criar uma página web que permita aos usuários visualizar informações sobre os personagens, episódios e locais da série Rick and Morty. Ele utiliza a API do Rick and Morty para obter essas informações.
